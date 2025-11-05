@@ -4,6 +4,7 @@ CREATE TABLE employees (
     department_id INT NOT NULL,
     hire_date DATE NOT NULL,
     salary DECIMAL(10,2),
+    status VARCHAR(20)  -- Added new column
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
