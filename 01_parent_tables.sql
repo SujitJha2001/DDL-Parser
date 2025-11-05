@@ -4,7 +4,7 @@ CREATE TABLE departments (
     company_id INT NOT NULL,
     location_id INT,  -- Optional reference to locations
     created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    budget DECIMAL(15,2),
+    budget DECIMAL(15,3),
     -- EXPLICIT FOREIGN KEYS
     FOREIGN KEY (company_id) REFERENCES companies(company_id),
     FOREIGN KEY (location_id) REFERENCES locations(location_id)
