@@ -5,7 +5,7 @@ CREATE TABLE Deloitte.Client (
 );
 
 -- In schema Sales  
-CREATE TABLE Sales.Orders (
+CREATE TABLE Sales.PurchOrders (
     OrderID INT PRIMARY KEY,
     ClientID INT REFERENCES Deloitte.Client(ClientID)  -- Cross-schema reference
 );
