@@ -1,9 +1,3 @@
--- In schema Deloitte
-CREATE OR REPLACE TABLE Deloitte.Client (
-    ClientID INT PRIMARY KEY,
-    ClientName VARCHAR(100)
-);
-
 -- In schema Sales  
 CREATE OR REPLACE TABLE Sales.PurchOrders (
     OrderID INT PRIMARY KEY,
@@ -28,3 +22,9 @@ CREATE OR REPLACE TABLE Deloitte.Deloitte_ClientList (
    WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE=[Deloitte].[Deloitte_ClientList_History], DATA_CONSISTENCY_CHECK=ON) !!!RESOLVE EWI!!! /*** SSC-EWI-0073 - PENDING FUNCTIONAL EQUIVALENCE REVIEW FOR 'TableOptionSystemVersioning' NODE ***/!!!)
    COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 1,  "minor": 20,  "patch": "10.0" }, "attributes": {  "component": "transact",  "convertedOn": "11/11/2025",  "domain": "evelyn",  "migrationid": "tXGaAVYzjXO6zsbRGZv7Hg==" }}'
 ;
+
+-- In schema Deloitte
+CREATE OR REPLACE TABLE Deloitte.Client (
+    ClientID INT PRIMARY KEY,
+    ClientName VARCHAR(100)
+);
