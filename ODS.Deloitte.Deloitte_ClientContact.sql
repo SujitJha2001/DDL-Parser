@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE Deloitte.Deloitte_ClientContact (
+CREATE OR REPLACE TABLE ODS.Deloitte.Deloitte_ClientContact (
     ContactId INT NOT NULL,
     ClientEntityId INT NOT NULL,
     ExternalAccountId NVARCHAR(255) NOT NULL,
