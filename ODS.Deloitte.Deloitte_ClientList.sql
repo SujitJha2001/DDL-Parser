@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE Deloitte.Deloitte_ClientList (
+CREATE OR REPLACE TABLE ODS.Deloitte.Deloitte_ClientList (
     ClientEntityId INT NOT NULL,
     ExternalAccountId NVARCHAR(255) NOT NULL,
     LabelAccountId NVARCHAR(25) NOT NULL,
