@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE Deloitte.Deloitte_EmployeeMaster (
+CREATE OR REPLACE TABLE ODS.Deloitte.Deloitte_EmployeeMaster (
     EmployeeId NVARCHAR(50) NOT NULL,
     EmployeeName NVARCHAR(255) NOT NULL,
     Department NVARCHAR(100) NULL,
