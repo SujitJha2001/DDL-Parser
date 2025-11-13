@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE Deloitte.Deloitte_ProjectList (
+CREATE OR REPLACE TABLE ODS.Deloitte.Deloitte_ProjectList (
     ProjectId INT NOT NULL,
     ProjectCode NVARCHAR(50) NOT NULL,
     ProjectName NVARCHAR(255) NOT NULL,
