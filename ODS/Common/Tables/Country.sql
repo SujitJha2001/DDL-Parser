@@ -1,0 +1,8 @@
+CREATE OR REPLACE TABLE Common.Country (
+    CountryID INT PRIMARY KEY,
+    CountryCode VARCHAR(3) NOT NULL UNIQUE,
+    CountryName VARCHAR(100) NOT NULL,
+    Region VARCHAR(50),
+    CurrencyCode VARCHAR(3),
+    CreatedDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
